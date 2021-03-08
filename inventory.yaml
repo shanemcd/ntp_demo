@@ -1,0 +1,23 @@
+all:
+  vars:
+    ntp:
+      servers:
+      - name: www.google.com
+        params:
+        - iburst
+      - name: 1.centos.pool.ntp.org
+        params:
+        - iburst
+      - name: 2.centos.pool.ntp.org
+        params:
+        - iburst
+      - name: 3.centos.pool.ntp.org
+        params:
+        - iburst
+
+  hosts:
+  children:
+    centos:
+      hosts:
+        one:
+ 

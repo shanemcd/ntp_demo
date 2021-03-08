@@ -144,3 +144,41 @@
 210308225653.032 DEBUG 'winston.actions.explore.4bf2.update' runner finished
 210308225653.033 INFO 'winston.actions.explore.4bf2.update' Playbook complete
 210308225653.180 INFO 'winston.actions.explore.4bf2.write_artifact' Saved artifact as /home/bthornto/github/ntp_demo/site_artifact.json
+210308225710.978 DEBUG 'winston.actions.select.run' selection made
+210308225710.978 DEBUG 'winston.actions.select.run' Requested next step in explore4bf2 will be task
+210308225716.079 DEBUG 'winston.actions.back.run' back requested
+210308225716.079 DEBUG 'winston.actions.back.run' Stepping back in explore4bf2 from task to task_list
+210308225805.077 DEBUG 'winston.actions.rerun.run' rerun requested
+210308225805.078 DEBUG 'winston.actions._runner.run' Runner arg: json_mode:True
+210308225805.078 DEBUG 'winston.actions._runner.run' Runner arg: quiet:True
+210308225805.078 DEBUG 'winston.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <winston.actions._runner.PlaybookRunner object at 0x7f7611bd8490>>
+210308225805.079 DEBUG 'winston.actions._runner.run' Runner arg: envvars:{'ANSIBLE_BECOME_PASS': 'snapple1'}
+210308225805.079 DEBUG 'winston.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <winston.actions._runner.PlaybookRunner object at 0x7f7611bd8490>>
+210308225805.079 DEBUG 'winston.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <winston.actions._runner.PlaybookRunner object at 0x7f7611bd8490>>
+210308225805.079 DEBUG 'winston.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210308225805.079 DEBUG 'winston.actions._runner.run' Runner arg: cmdline:['/home/bthornto/github/ntp_demo/site.yaml', '-i', '/home/bthornto/github/ntp_demo/inventory.yaml']
+210308225805.079 DEBUG 'winston.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210308225805.079 DEBUG 'winston.actions._runner.run' Runner arg: private_data_dir:.
+210308225805.080 DEBUG 'winston.actions._runner.run' Runner arg: process_isolation_executable:podman
+210308225805.080 DEBUG 'winston.actions._runner.run' Runner arg: process_isolation:True
+210308225805.151 DEBUG 'winston.actions.explore.4bf2._run_runner' runner requested to start
+210308225805.151 DEBUG 'winston.actions.explore.4bf2.rerun' Playbook rerun triggered
+210308225808.551 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 4 events
+210308225812.207 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 1 events
+210308225812.310 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 2 events
+210308225815.427 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 3 events
+210308225815.530 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 1 events
+210308225815.634 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 2 events
+210308225815.737 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 4 events
+210308225817.086 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 3 events
+210308225818.234 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 1 events
+210308225818.339 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 4 events
+210308225850.992 DEBUG 'winston.actions.select.run' selection made
+210308225850.992 DEBUG 'winston.actions.select.run' Requested next step in explore4bf2 will be task_list
+210308225918.379 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 3 events
+210308225921.123 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 1 events
+210308225921.227 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 4 events
+210308225921.333 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 1 events
+210308225921.855 DEBUG 'winston.actions.explore.4bf2.update' runner finished
+210308225921.856 INFO 'winston.actions.explore.4bf2.update' Playbook complete
+210308225921.941 INFO 'winston.actions.explore.4bf2.write_artifact' Saved artifact as /home/bthornto/github/ntp_demo/site_artifact.json

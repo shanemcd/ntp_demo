@@ -1,189 +1,103 @@
-210308225514.887 DEBUG 'winston.main' Using /home/bthornto/github/ntp_demo/winston.cfg
-210308225514.887 DEBUG 'winston.main' ini entry: container_engine matched to arg: container_engine
-210308225514.887 DEBUG 'winston.main' container_engine was not provided, using 'podman'
-210308225514.887 DEBUG 'winston.main' ini entry: ee_image matched to arg: ee_image
-210308225514.887 DEBUG 'winston.main' ee_image was not provided, using 'quay.io/ansible/network-ee'
-210308225514.887 DEBUG 'winston.main' ini entry: execution_environment matched to arg: execution_environment
-210308225514.887 DEBUG 'winston.main' execution_environment was default, using entry 'True'
-210308225514.887 DEBUG 'winston.main' ini entry: ide matched to arg: ide
-210308225514.887 DEBUG 'winston.main' ide was not provided, using 'vscode'
-210308225514.887 DEBUG 'winston.main' ini entry: inventory_columns matched to arg: inventory_columns
-210308225514.887 DEBUG 'winston.main' inventory_columns was not provided, using 'inventory_hostname'
-210308225514.887 DEBUG 'winston.main' ini entry: loglevel matched to arg: loglevel
-210308225514.887 DEBUG 'winston.main' loglevel was not provided, using 'debug'
-210308225514.887 DEBUG 'winston.main' ini entry: no_osc4 matched to arg: no_osc4
-210308225514.887 DEBUG 'winston.main' no_osc4 was default, using entry 'True'
-210308225514.887 DEBUG 'winston.main' Collection doc cache: path=/home/bthornto/.cache/winston/collection_doc_cache.db
-210308225514.887 DEBUG 'winston.main' Collection doc cache: current version=0.6.0
-210308225514.890 DEBUG 'winston.main' Running with container_engine=podman <class 'str'>
-210308225514.890 DEBUG 'winston.main' Running with execution_environment=True <class 'bool'>
-210308225514.890 DEBUG 'winston.main' Running with ee_image=quay.io/ansible/network-ee <class 'str'>
-210308225514.891 DEBUG 'winston.main' Running with inventory_columns=inventory_hostname <class 'str'>
-210308225514.891 DEBUG 'winston.main' Running with ide=vscode <class 'str'>
-210308225514.891 DEBUG 'winston.main' Running with logfile=/home/bthornto/github/ntp_demo/winston.log <class 'str'>
-210308225514.891 DEBUG 'winston.main' Running with loglevel=debug <class 'str'>
-210308225514.891 DEBUG 'winston.main' Running with no_osc4=True <class 'bool'>
-210308225514.891 DEBUG 'winston.main' Running with web=False <class 'bool'>
-210308225514.891 DEBUG 'winston.main' Running with app=explore <class 'str'>
-210308225514.891 DEBUG 'winston.main' Running with playbook=/home/bthornto/github/ntp_demo/site.yaml <class 'str'>
-210308225514.891 DEBUG 'winston.main' Running with artifact=/home/bthornto/github/ntp_demo/site_artifact.json <class 'str'>
-210308225514.891 DEBUG 'winston.main' Running with inventory=['/home/bthornto/github/ntp_demo/inventory.yaml'] <class 'list'>
-210308225514.891 DEBUG 'winston.main' Running with requires_ansible=True <class 'bool'>
-210308225514.891 DEBUG 'winston.main' Running with cmdline=[] <class 'list'>
-210308225514.892 DEBUG 'winston.main' Running with editor=code -g {filename}:{line_number} <class 'str'>
-210308225514.892 DEBUG 'winston.main' Running with editor_is_console=False <class 'bool'>
-210308225514.892 DEBUG 'winston.main' Running with share_dir=/home/bthornto/github/ntp_demo/venv/share/winston <class 'str'>
-210308225514.892 DEBUG 'winston.main' Running with cache_dir=/home/bthornto/.cache/winston <class 'str'>
-210308225514.892 DEBUG 'winston.main' Running with collection_doc_cache={} <class 'kvs.KeyValueStore'>
-210308225514.892 DEBUG 'winston.main' Running with original_command=['explore', 'site.yaml', '-i', 'inventory.yaml'] <class 'list'>
-210308225514.892 DEBUG 'winston.main' Running with parse_and_update=<function parse_and_update at 0x7f7611da9550> <class 'function'>
-210308225514.894 DEBUG 'winston.ui_framework.ui._set_colors' curses.COLORS: 256
-210308225514.894 DEBUG 'winston.ui_framework.ui._set_colors' curses.can_change_color: True
-210308225514.894 DEBUG 'winston.ui_framework.ui._set_colors' self._no_osc4: True
-210308225514.894 DEBUG 'winston.ui_framework.ui._set_colors' _custom_colors_enabled: False
-210308225514.894 DEBUG 'winston.ui_framework.ui._set_colors' Using terminal defaults
-210308225514.912 DEBUG 'winston.actions.explore.4bf2.run' subaction type is explore
-210308225514.912 DEBUG 'winston.actions.explore.4bf2._init_explore' Using playbook from calling app
-210308225514.912 DEBUG 'winston.actions.explore.4bf2._init_explore' Using params from calling app
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with container_engine=podman <class 'str'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with execution_environment=True <class 'bool'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with ee_image=quay.io/ansible/network-ee <class 'str'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with inventory_columns=inventory_hostname <class 'str'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with ide=vscode <class 'str'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with logfile=/home/bthornto/github/ntp_demo/winston.log <class 'str'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with loglevel=debug <class 'str'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with no_osc4=True <class 'bool'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with web=False <class 'bool'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with app=explore <class 'str'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with playbook=/home/bthornto/github/ntp_demo/site.yaml <class 'str'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with artifact=/home/bthornto/github/ntp_demo/site_artifact.json <class 'str'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with inventory=['/home/bthornto/github/ntp_demo/inventory.yaml'] <class 'list'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with requires_ansible=True <class 'bool'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with cmdline=[] <class 'list'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with editor=code -g {filename}:{line_number} <class 'str'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with editor_is_console=False <class 'bool'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with share_dir=/home/bthornto/github/ntp_demo/venv/share/winston <class 'str'>
-210308225514.913 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with cache_dir=/home/bthornto/.cache/winston <class 'str'>
-210308225514.914 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with collection_doc_cache={} <class 'kvs.KeyValueStore'>
-210308225514.914 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with original_command=['explore', 'site.yaml', '-i', 'inventory.yaml'] <class 'list'>
-210308225514.914 DEBUG 'winston.actions.explore.4bf2._init_explore' Running with parse_and_update=<function parse_and_update at 0x7f7611da9550> <class 'function'>
-210308225514.914 DEBUG 'winston.actions._runner.run' Runner arg: json_mode:True
-210308225514.914 DEBUG 'winston.actions._runner.run' Runner arg: quiet:True
-210308225514.914 DEBUG 'winston.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <winston.actions._runner.PlaybookRunner object at 0x7f7611c268b0>>
-210308225514.914 DEBUG 'winston.actions._runner.run' Runner arg: envvars:{'ANSIBLE_BECOME_PASS': 'snapple1'}
-210308225514.914 DEBUG 'winston.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <winston.actions._runner.PlaybookRunner object at 0x7f7611c268b0>>
-210308225514.914 DEBUG 'winston.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <winston.actions._runner.PlaybookRunner object at 0x7f7611c268b0>>
-210308225514.914 DEBUG 'winston.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
-210308225514.914 DEBUG 'winston.actions._runner.run' Runner arg: cmdline:['/home/bthornto/github/ntp_demo/site.yaml', '-i', '/home/bthornto/github/ntp_demo/inventory.yaml']
-210308225514.914 DEBUG 'winston.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
-210308225514.914 DEBUG 'winston.actions._runner.run' Runner arg: private_data_dir:.
-210308225514.914 DEBUG 'winston.actions._runner.run' Runner arg: process_isolation_executable:podman
-210308225514.914 DEBUG 'winston.actions._runner.run' Runner arg: process_isolation:True
-210308225514.997 DEBUG 'winston.actions.explore.4bf2._run_runner' runner requested to start
-210308225514.997 INFO 'winston.actions.explore.4bf2._init_explore' Explore initialized and playbook started.
-210308225515.100 DEBUG 'winston.actions.explore.4bf2._take_step' autoscroll enabled
-210308225517.571 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 4 events
-210308225517.571 DEBUG 'winston.actions.inventory.run' inventory requested
-210308225517.571 INFO 'winston.actions.inventory._build_inventory_list' no inventory provided, using inventory from args
-210308225517.571 DEBUG 'winston.actions.inventory._collect_inventory_details' trying execution environment
-210308225517.571 DEBUG 'winston.actions.inventory._try_ee' running: podman run -i -t -v /home/bthornto/github/ntp_demo:/home/bthornto/github/ntp_demo:z quay.io/ansible/network-ee ansible-inventory -i /home/bthornto/github/ntp_demo/inventory.yaml --list
-210308225520.656 DEBUG 'winston.actions.select.run' selection made
-210308225520.657 DEBUG 'winston.actions.select.run' Requested next step in inventory will be group_menu
-210308225521.107 DEBUG 'winston.actions.select.run' selection made
-210308225521.107 DEBUG 'winston.actions.select.run' Requested next step in inventory will be group_menu
-210308225521.312 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 3 events
-210308225524.449 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 1 events
-210308225524.551 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 2 events
-210308225524.653 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 3 events
-210308225524.757 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 4 events
-210308225524.859 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 7 events
-210308225524.961 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 6 events
-210308225525.064 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 1 events
-210308225525.340 DEBUG 'winston.actions.back.run' back requested
-210308225525.340 DEBUG 'winston.actions.back.run' Stepping back in inventory from group_menu to group_menu
-210308225525.547 DEBUG 'winston.actions.explore.4bf2.update' runner finished
-210308225525.547 INFO 'winston.actions.explore.4bf2.update' Playbook complete
-210308225525.633 INFO 'winston.actions.explore.4bf2.write_artifact' Saved artifact as /home/bthornto/github/ntp_demo/site_artifact.json
-210308225526.667 DEBUG 'winston.actions.back.run' back requested
-210308225526.667 DEBUG 'winston.actions.back.run' Stepping back in inventory from group_menu to main_menu
-210308225527.668 DEBUG 'winston.actions.back.run' back requested
-210308225527.668 DEBUG 'winston.actions.back.run' Return to inventory, at last step
-210308225531.239 DEBUG 'winston.actions.select.run' selection made
-210308225531.240 DEBUG 'winston.actions.select.run' Requested next step in explore4bf2 will be task_list
-210308225539.035 DEBUG 'winston.actions.rerun.run' rerun requested
-210308225539.036 DEBUG 'winston.actions._runner.run' Runner arg: json_mode:True
-210308225539.036 DEBUG 'winston.actions._runner.run' Runner arg: quiet:True
-210308225539.036 DEBUG 'winston.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <winston.actions._runner.PlaybookRunner object at 0x7f7613ac91f0>>
-210308225539.036 DEBUG 'winston.actions._runner.run' Runner arg: envvars:{'ANSIBLE_BECOME_PASS': 'snapple1'}
-210308225539.037 DEBUG 'winston.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <winston.actions._runner.PlaybookRunner object at 0x7f7613ac91f0>>
-210308225539.037 DEBUG 'winston.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <winston.actions._runner.PlaybookRunner object at 0x7f7613ac91f0>>
-210308225539.037 DEBUG 'winston.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
-210308225539.037 DEBUG 'winston.actions._runner.run' Runner arg: cmdline:['/home/bthornto/github/ntp_demo/site.yaml', '-i', '/home/bthornto/github/ntp_demo/inventory.yaml']
-210308225539.037 DEBUG 'winston.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
-210308225539.037 DEBUG 'winston.actions._runner.run' Runner arg: private_data_dir:.
-210308225539.037 DEBUG 'winston.actions._runner.run' Runner arg: process_isolation_executable:podman
-210308225539.037 DEBUG 'winston.actions._runner.run' Runner arg: process_isolation:True
-210308225539.113 DEBUG 'winston.actions.explore.4bf2._run_runner' runner requested to start
-210308225539.113 DEBUG 'winston.actions.explore.4bf2.rerun' Playbook rerun triggered
-210308225541.684 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 4 events
-210308225545.015 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 3 events
-210308225548.359 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 3 events
-210308225548.462 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 1 events
-210308225548.567 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 2 events
-210308225548.670 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 4 events
-210308225550.008 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 3 events
-210308225550.943 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 1 events
-210308225551.046 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 4 events
-210308225621.127 DEBUG 'winston.actions.select.run' selection made
-210308225621.127 DEBUG 'winston.actions.select.run' Requested next step in explore4bf2 will be task_list
-210308225651.043 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 1 events
-210308225651.147 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 2 events
-210308225651.572 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 1 events
-210308225651.677 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 3 events
-210308225652.509 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 2 events
-210308225653.032 DEBUG 'winston.actions.explore.4bf2.update' runner finished
-210308225653.033 INFO 'winston.actions.explore.4bf2.update' Playbook complete
-210308225653.180 INFO 'winston.actions.explore.4bf2.write_artifact' Saved artifact as /home/bthornto/github/ntp_demo/site_artifact.json
-210308225710.978 DEBUG 'winston.actions.select.run' selection made
-210308225710.978 DEBUG 'winston.actions.select.run' Requested next step in explore4bf2 will be task
-210308225716.079 DEBUG 'winston.actions.back.run' back requested
-210308225716.079 DEBUG 'winston.actions.back.run' Stepping back in explore4bf2 from task to task_list
-210308225805.077 DEBUG 'winston.actions.rerun.run' rerun requested
-210308225805.078 DEBUG 'winston.actions._runner.run' Runner arg: json_mode:True
-210308225805.078 DEBUG 'winston.actions._runner.run' Runner arg: quiet:True
-210308225805.078 DEBUG 'winston.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <winston.actions._runner.PlaybookRunner object at 0x7f7611bd8490>>
-210308225805.079 DEBUG 'winston.actions._runner.run' Runner arg: envvars:{'ANSIBLE_BECOME_PASS': 'snapple1'}
-210308225805.079 DEBUG 'winston.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <winston.actions._runner.PlaybookRunner object at 0x7f7611bd8490>>
-210308225805.079 DEBUG 'winston.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <winston.actions._runner.PlaybookRunner object at 0x7f7611bd8490>>
-210308225805.079 DEBUG 'winston.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
-210308225805.079 DEBUG 'winston.actions._runner.run' Runner arg: cmdline:['/home/bthornto/github/ntp_demo/site.yaml', '-i', '/home/bthornto/github/ntp_demo/inventory.yaml']
-210308225805.079 DEBUG 'winston.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
-210308225805.079 DEBUG 'winston.actions._runner.run' Runner arg: private_data_dir:.
-210308225805.080 DEBUG 'winston.actions._runner.run' Runner arg: process_isolation_executable:podman
-210308225805.080 DEBUG 'winston.actions._runner.run' Runner arg: process_isolation:True
-210308225805.151 DEBUG 'winston.actions.explore.4bf2._run_runner' runner requested to start
-210308225805.151 DEBUG 'winston.actions.explore.4bf2.rerun' Playbook rerun triggered
-210308225808.551 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 4 events
-210308225812.207 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 1 events
-210308225812.310 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 2 events
-210308225815.427 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 3 events
-210308225815.530 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 1 events
-210308225815.634 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 2 events
-210308225815.737 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 4 events
-210308225817.086 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 3 events
-210308225818.234 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 1 events
-210308225818.339 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 4 events
-210308225850.992 DEBUG 'winston.actions.select.run' selection made
-210308225850.992 DEBUG 'winston.actions.select.run' Requested next step in explore4bf2 will be task_list
-210308225918.379 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 3 events
-210308225921.123 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 1 events
-210308225921.227 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 4 events
-210308225921.333 DEBUG 'winston.actions.explore.4bf2._dequeue' Drained 1 events
-210308225921.855 DEBUG 'winston.actions.explore.4bf2.update' runner finished
-210308225921.856 INFO 'winston.actions.explore.4bf2.update' Playbook complete
-210308225921.941 INFO 'winston.actions.explore.4bf2.write_artifact' Saved artifact as /home/bthornto/github/ntp_demo/site_artifact.json
-210308230245.824 DEBUG 'winston.actions.select.run' selection made
-210308230245.825 DEBUG 'winston.actions.select.run' Requested next step in explore4bf2 will be task
-210308230251.938 DEBUG 'winston.actions.back.run' back requested
-210308230251.938 DEBUG 'winston.actions.back.run' Stepping back in explore4bf2 from task to task_list
-210308230255.387 DEBUG 'winston.actions.explore.4bf2._prepare_to_quit' runner not running
+210308230345.513 DEBUG 'winston.main' Using /home/bthornto/github/ntp_demo/winston.cfg
+210308230345.513 DEBUG 'winston.main' ini entry: container_engine matched to arg: container_engine
+210308230345.513 DEBUG 'winston.main' container_engine was not provided, using 'podman'
+210308230345.513 DEBUG 'winston.main' ini entry: ee_image matched to arg: ee_image
+210308230345.513 DEBUG 'winston.main' ee_image was not provided, using 'quay.io/ansible/network-ee'
+210308230345.513 DEBUG 'winston.main' ini entry: execution_environment matched to arg: execution_environment
+210308230345.513 DEBUG 'winston.main' execution_environment was default, using entry 'True'
+210308230345.513 DEBUG 'winston.main' ini entry: ide matched to arg: ide
+210308230345.513 DEBUG 'winston.main' ide was not provided, using 'vscode'
+210308230345.513 DEBUG 'winston.main' ini entry: inventory_columns matched to arg: inventory_columns
+210308230345.513 DEBUG 'winston.main' inventory_columns was not provided, using 'inventory_hostname'
+210308230345.513 DEBUG 'winston.main' ini entry: loglevel matched to arg: loglevel
+210308230345.513 DEBUG 'winston.main' loglevel was not provided, using 'debug'
+210308230345.513 DEBUG 'winston.main' ini entry: no_osc4 matched to arg: no_osc4
+210308230345.513 DEBUG 'winston.main' no_osc4 was default, using entry 'True'
+210308230345.513 DEBUG 'winston.main' Collection doc cache: path=/home/bthornto/.cache/winston/collection_doc_cache.db
+210308230345.513 DEBUG 'winston.main' Collection doc cache: current version=0.6.0
+210308230345.516 DEBUG 'winston.main' Running with container_engine=podman <class 'str'>
+210308230345.516 DEBUG 'winston.main' Running with execution_environment=True <class 'bool'>
+210308230345.516 DEBUG 'winston.main' Running with ee_image=quay.io/ansible/network-ee <class 'str'>
+210308230345.516 DEBUG 'winston.main' Running with inventory_columns=inventory_hostname <class 'str'>
+210308230345.516 DEBUG 'winston.main' Running with ide=vscode <class 'str'>
+210308230345.517 DEBUG 'winston.main' Running with logfile=/home/bthornto/github/ntp_demo/winston.log <class 'str'>
+210308230345.517 DEBUG 'winston.main' Running with loglevel=debug <class 'str'>
+210308230345.517 DEBUG 'winston.main' Running with no_osc4=True <class 'bool'>
+210308230345.517 DEBUG 'winston.main' Running with web=False <class 'bool'>
+210308230345.517 DEBUG 'winston.main' Running with app=explore <class 'str'>
+210308230345.517 DEBUG 'winston.main' Running with playbook=/home/bthornto/github/ntp_demo/site.yaml <class 'str'>
+210308230345.517 DEBUG 'winston.main' Running with artifact=/home/bthornto/github/ntp_demo/site_artifact.json <class 'str'>
+210308230345.517 DEBUG 'winston.main' Running with inventory=['/home/bthornto/github/ntp_demo/inventory.yaml'] <class 'list'>
+210308230345.517 DEBUG 'winston.main' Running with requires_ansible=True <class 'bool'>
+210308230345.517 DEBUG 'winston.main' Running with cmdline=[] <class 'list'>
+210308230345.517 DEBUG 'winston.main' Running with editor=code -g {filename}:{line_number} <class 'str'>
+210308230345.517 DEBUG 'winston.main' Running with editor_is_console=False <class 'bool'>
+210308230345.517 DEBUG 'winston.main' Running with share_dir=/home/bthornto/github/ntp_demo/venv/share/winston <class 'str'>
+210308230345.517 DEBUG 'winston.main' Running with cache_dir=/home/bthornto/.cache/winston <class 'str'>
+210308230345.517 DEBUG 'winston.main' Running with collection_doc_cache={} <class 'kvs.KeyValueStore'>
+210308230345.517 DEBUG 'winston.main' Running with original_command=['explore', 'site.yaml', '-i', 'inventory.yaml'] <class 'list'>
+210308230345.517 DEBUG 'winston.main' Running with parse_and_update=<function parse_and_update at 0x7fd500747550> <class 'function'>
+210308230345.518 DEBUG 'winston.ui_framework.ui._set_colors' curses.COLORS: 256
+210308230345.519 DEBUG 'winston.ui_framework.ui._set_colors' curses.can_change_color: True
+210308230345.519 DEBUG 'winston.ui_framework.ui._set_colors' self._no_osc4: True
+210308230345.519 DEBUG 'winston.ui_framework.ui._set_colors' _custom_colors_enabled: False
+210308230345.519 DEBUG 'winston.ui_framework.ui._set_colors' Using terminal defaults
+210308230345.540 DEBUG 'winston.actions.explore.a0db.run' subaction type is explore
+210308230345.540 DEBUG 'winston.actions.explore.a0db._init_explore' Using playbook from calling app
+210308230345.540 DEBUG 'winston.actions.explore.a0db._init_explore' Using params from calling app
+210308230345.540 DEBUG 'winston.actions.explore.a0db._init_explore' Running with container_engine=podman <class 'str'>
+210308230345.540 DEBUG 'winston.actions.explore.a0db._init_explore' Running with execution_environment=True <class 'bool'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with ee_image=quay.io/ansible/network-ee <class 'str'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with inventory_columns=inventory_hostname <class 'str'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with ide=vscode <class 'str'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with logfile=/home/bthornto/github/ntp_demo/winston.log <class 'str'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with loglevel=debug <class 'str'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with no_osc4=True <class 'bool'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with web=False <class 'bool'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with app=explore <class 'str'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with playbook=/home/bthornto/github/ntp_demo/site.yaml <class 'str'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with artifact=/home/bthornto/github/ntp_demo/site_artifact.json <class 'str'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with inventory=['/home/bthornto/github/ntp_demo/inventory.yaml'] <class 'list'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with requires_ansible=True <class 'bool'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with cmdline=[] <class 'list'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with editor=code -g {filename}:{line_number} <class 'str'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with editor_is_console=False <class 'bool'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with share_dir=/home/bthornto/github/ntp_demo/venv/share/winston <class 'str'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with cache_dir=/home/bthornto/.cache/winston <class 'str'>
+210308230345.541 DEBUG 'winston.actions.explore.a0db._init_explore' Running with collection_doc_cache={} <class 'kvs.KeyValueStore'>
+210308230345.542 DEBUG 'winston.actions.explore.a0db._init_explore' Running with original_command=['explore', 'site.yaml', '-i', 'inventory.yaml'] <class 'list'>
+210308230345.542 DEBUG 'winston.actions.explore.a0db._init_explore' Running with parse_and_update=<function parse_and_update at 0x7fd500747550> <class 'function'>
+210308230345.542 DEBUG 'winston.actions._runner.run' Runner arg: json_mode:True
+210308230345.542 DEBUG 'winston.actions._runner.run' Runner arg: quiet:True
+210308230345.542 DEBUG 'winston.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <winston.actions._runner.PlaybookRunner object at 0x7fd5005c4910>>
+210308230345.542 DEBUG 'winston.actions._runner.run' Runner arg: envvars:{'ANSIBLE_BECOME_PASS': 'snapple1'}
+210308230345.542 DEBUG 'winston.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <winston.actions._runner.PlaybookRunner object at 0x7fd5005c4910>>
+210308230345.542 DEBUG 'winston.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <winston.actions._runner.PlaybookRunner object at 0x7fd5005c4910>>
+210308230345.542 DEBUG 'winston.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210308230345.542 DEBUG 'winston.actions._runner.run' Runner arg: cmdline:['/home/bthornto/github/ntp_demo/site.yaml', '-i', '/home/bthornto/github/ntp_demo/inventory.yaml']
+210308230345.542 DEBUG 'winston.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210308230345.542 DEBUG 'winston.actions._runner.run' Runner arg: private_data_dir:.
+210308230345.542 DEBUG 'winston.actions._runner.run' Runner arg: process_isolation_executable:podman
+210308230345.542 DEBUG 'winston.actions._runner.run' Runner arg: process_isolation:True
+210308230345.642 DEBUG 'winston.actions.explore.a0db._run_runner' runner requested to start
+210308230345.642 INFO 'winston.actions.explore.a0db._init_explore' Explore initialized and playbook started.
+210308230345.746 DEBUG 'winston.actions.explore.a0db._take_step' autoscroll enabled
+210308230348.311 DEBUG 'winston.actions.explore.a0db._dequeue' Drained 2 events
+210308230348.414 DEBUG 'winston.actions.explore.a0db._dequeue' Drained 2 events
+210308230351.761 DEBUG 'winston.actions.explore.a0db._dequeue' Drained 3 events
+210308230351.863 DEBUG 'winston.actions.explore.a0db._dequeue' Drained 1 events
+210308230351.967 DEBUG 'winston.actions.explore.a0db._dequeue' Drained 2 events
+210308230352.070 DEBUG 'winston.actions.explore.a0db._dequeue' Drained 4 events
+210308230352.291 DEBUG 'winston.actions.select.run' selection made
+210308230352.292 DEBUG 'winston.actions.select.run' Requested next step in explorea0db will be task_list
+210308230353.323 DEBUG 'winston.actions.explore.a0db._dequeue' Drained 3 events
+210308230354.359 DEBUG 'winston.actions.explore.a0db._dequeue' Drained 5 events
+210308230454.361 DEBUG 'winston.actions.explore.a0db._dequeue' Drained 1 events
+210308230454.466 DEBUG 'winston.actions.explore.a0db._dequeue' Drained 2 events
+210308230455.936 DEBUG 'winston.actions.explore.a0db._dequeue' Drained 4 events
+210308230456.764 DEBUG 'winston.actions.explore.a0db._dequeue' Drained 1 events
+210308230456.869 DEBUG 'winston.actions.explore.a0db._dequeue' Drained 1 events
+210308230457.391 DEBUG 'winston.actions.explore.a0db.update' runner finished
+210308230457.391 INFO 'winston.actions.explore.a0db.update' Playbook complete
+210308230457.436 INFO 'winston.actions.explore.a0db.write_artifact' Saved artifact as /home/bthornto/github/ntp_demo/site_artifact.json
+210308230517.162 DEBUG 'winston.actions.explore.a0db._prepare_to_quit' runner not running

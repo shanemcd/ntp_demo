@@ -182,3 +182,8 @@
 210308225921.855 DEBUG 'winston.actions.explore.4bf2.update' runner finished
 210308225921.856 INFO 'winston.actions.explore.4bf2.update' Playbook complete
 210308225921.941 INFO 'winston.actions.explore.4bf2.write_artifact' Saved artifact as /home/bthornto/github/ntp_demo/site_artifact.json
+210308230245.824 DEBUG 'winston.actions.select.run' selection made
+210308230245.825 DEBUG 'winston.actions.select.run' Requested next step in explore4bf2 will be task
+210308230251.938 DEBUG 'winston.actions.back.run' back requested
+210308230251.938 DEBUG 'winston.actions.back.run' Stepping back in explore4bf2 from task to task_list
+210308230255.387 DEBUG 'winston.actions.explore.4bf2._prepare_to_quit' runner not running

@@ -1,9 +1,6 @@
 - hosts: all
-  gather_facts: false
+  gather_facts: true
   tasks:
-  - name: Gather some basic host information
-    ansible.builtin.setup:
-
   - name: Collect the current NTP configuration
     ansible.utils.cli_parse:
       command: cat /etc/ntp.conf
@@ -58,7 +55,7 @@
             statuses:
               type: array
               items:
-              - type: object
+                type: object
                 properties:
                   stratum:
                     type: integer

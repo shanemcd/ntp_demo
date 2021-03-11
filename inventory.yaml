@@ -2,11 +2,10 @@ all:
   vars:
     ntp:
       servers:
-      # - name: 0.centos.pool.ntp.org
-      - name: www.google.com 
+      - name: 0.centos.pool.ntp.org
         params:
         - iburst
-      - name: 1.centos.pool.ntp.org
+      - name: www.google.com 
         params:
         - iburst
       - name: 2.centos.pool.ntp.org

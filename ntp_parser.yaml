@@ -34,5 +34,4 @@
       delay: "{{ delay }}"
       offset: "{{ offset }}"
       jitter: "{{ jitter }}"
-      failed: "{{ stratum == '16' }}"
 

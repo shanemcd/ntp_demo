@@ -48,6 +48,25 @@
           template_path: "{{ playbook_dir }}/ntp_parser.yaml"
         set_fact: current_ntp_status
     
+    - name: Use a JSON schema to ensure no NTP servers are stratum 16 (unreachable)
+      ansible.builtin.set_fact:
+        unreachable_servers: "{{ current_ntp_status|ansible.utils.validate(criteria) }}"
+      vars:
+        criteria:
+          type: object
+          properties:
+            statuses:
+              type: array
+              items:
+              - type: object
+                properties:
+                  stratum:
+                    type: integer
+                    not:
+                      const: 16
+                required:
+                - stratum
+
     - name: Restore the original configuration if a server is failed (stratum 16)
       ansible.builtin.template:
         src: ntp.conf.j2
@@ -56,6 +75,19 @@
         group: root
       vars:
         ntp_servers: "{{ original_ntp_configuration.servers }}"
-      when: "{{ current_ntp_status.statuses|selectattr('failed', 'equalto', True) }}"
+      when: unreachable_servers
+    
+    - name: Fail the host to indicate unreachable servers wer found and config restored
+      ansible.builtin.fail:
+        msg: "One or more ntp servers found with stratum 16: {{ unreachable_servers }}"
+      when: unreachable_servers
+
+      
+
+
+    
+    
+      
+
 
      

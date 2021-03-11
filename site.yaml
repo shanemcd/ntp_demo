@@ -74,7 +74,7 @@
         ntp_servers: "{{ original_ntp_configuration.servers }}"
       when: unreachable_servers
     
-    - name: Fail the host to indicate unreachable servers wer found and config restored
+    - name: Fail the host to indicate unreachable servers were found and config restored
       ansible.builtin.fail:
         msg: "One or more ntp servers found with stratum 16: {{ unreachable_servers }}"
       when: unreachable_servers

@@ -46,7 +46,7 @@
         set_fact: current_ntp_status
     
     - name: Define the schema that will be used for checking
-      ansible.utils.set_fact:
+      ansible.builtin.set_fact:
         criteria:
           type: object
           properties:

@@ -2,22 +2,31 @@ all:
   vars:
     ntp:
       servers:
-      - name: 0.centos.pool.ntp.org
+      - name: 0.rhel.pool.ntp.org
         params:
         - iburst
-      - name: www.google.com 
+      - name: foo1.rhel.pool.ntp.org 
         params:
         - iburst
-      - name: 2.centos.pool.ntp.org
+      - name: 2.rhel.pool.ntp.org
         params:
         - iburst
-      - name: 3.centos.pool.ntp.org
+      - name: 3.rhel.pool.ntp.org
         params:
         - iburst
 
   hosts:
   children:
-    centos:
+    servers:
       hosts:
-        one:
+        node1:
+          ansible_host: 18.208.171.10
+        node2:
+          ansible_host: 3.85.167.30
+        node3:
+          ansible_host: 52.91.220.212
+      vars:
+        ansible_user: student1
+        ansible_ssh_pass: Bradf00d!
+
  

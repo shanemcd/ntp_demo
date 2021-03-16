@@ -1,0 +1,869 @@
+210316143537.353 DEBUG 'ansible_launcher.main' Using /home/student1/ntp_demo/ansible_launcher.cfg
+210316143537.353 DEBUG 'ansible_launcher.main' ini entry: container_engine matched to arg: container_engine
+210316143537.353 DEBUG 'ansible_launcher.main' container_engine was not provided, using 'podman'
+210316143537.353 DEBUG 'ansible_launcher.main' ini entry: ee_image matched to arg: ee_image
+210316143537.353 DEBUG 'ansible_launcher.main' ee_image was not provided, using 'quay.io/ansible/network-ee'
+210316143537.353 DEBUG 'ansible_launcher.main' ini entry: execution_environment matched to arg: execution_environment
+210316143537.353 DEBUG 'ansible_launcher.main' execution_environment was default, using entry 'True'
+210316143537.353 DEBUG 'ansible_launcher.main' ini entry: ide matched to arg: ide
+210316143537.353 DEBUG 'ansible_launcher.main' ide was not provided, using 'vscode'
+210316143537.353 DEBUG 'ansible_launcher.main' ini entry: inventory_columns matched to arg: inventory_columns
+210316143537.353 DEBUG 'ansible_launcher.main' inventory_columns was not provided, using 'inventory_hostname'
+210316143537.353 DEBUG 'ansible_launcher.main' ini entry: loglevel matched to arg: loglevel
+210316143537.353 DEBUG 'ansible_launcher.main' loglevel was not provided, using 'debug'
+210316143537.353 DEBUG 'ansible_launcher.main' ini entry: no_osc4 matched to arg: no_osc4
+210316143537.353 DEBUG 'ansible_launcher.main' no_osc4 was default, using entry 'True'
+210316143537.353 DEBUG 'ansible_launcher.main' Collection doc cache: path=/home/student1/.cache/ansible_launcher/collection_doc_cache.db
+210316143537.353 DEBUG 'ansible_launcher.main' Collection doc cache: current version=0.6.0
+210316143537.358 DEBUG 'ansible_launcher.utils.set_ansible_envar' ANSIBLE_CONFIG set to /home/student1/ntp_demo/ansible.cfg
+210316143537.359 DEBUG 'ansible_launcher.main' Running with container_engine=podman <class 'str'>
+210316143537.359 DEBUG 'ansible_launcher.main' Running with execution_environment=True <class 'bool'>
+210316143537.359 DEBUG 'ansible_launcher.main' Running with ee_image=quay.io/ansible/network-ee <class 'str'>
+210316143537.359 DEBUG 'ansible_launcher.main' Running with inventory_columns=inventory_hostname <class 'str'>
+210316143537.359 DEBUG 'ansible_launcher.main' Running with ide=vscode <class 'str'>
+210316143537.359 DEBUG 'ansible_launcher.main' Running with logfile=/home/student1/ntp_demo/ansible_launcher.log <class 'str'>
+210316143537.359 DEBUG 'ansible_launcher.main' Running with loglevel=debug <class 'str'>
+210316143537.359 DEBUG 'ansible_launcher.main' Running with no_osc4=True <class 'bool'>
+210316143537.359 DEBUG 'ansible_launcher.main' Running with web=False <class 'bool'>
+210316143537.359 DEBUG 'ansible_launcher.main' Running with app=explore <class 'str'>
+210316143537.360 DEBUG 'ansible_launcher.main' Running with playbook=/home/student1/ntp_demo/site.yaml <class 'str'>
+210316143537.360 DEBUG 'ansible_launcher.main' Running with artifact=/home/student1/ntp_demo/site_artifact.json <class 'str'>
+210316143537.360 DEBUG 'ansible_launcher.main' Running with inventory=['/home/student1/ntp_demo/inventory.yaml'] <class 'list'>
+210316143537.360 DEBUG 'ansible_launcher.main' Running with requires_ansible=True <class 'bool'>
+210316143537.360 DEBUG 'ansible_launcher.main' Running with cmdline=[] <class 'list'>
+210316143537.360 DEBUG 'ansible_launcher.main' Running with editor=code -g {filename}:{line_number} <class 'str'>
+210316143537.360 DEBUG 'ansible_launcher.main' Running with editor_is_console=False <class 'bool'>
+210316143537.360 DEBUG 'ansible_launcher.main' Running with share_dir=/home/student1/ansible-launcher_demo/venv/share/ansible_launcher <class 'str'>
+210316143537.360 DEBUG 'ansible_launcher.main' Running with cache_dir=/home/student1/.cache/ansible_launcher <class 'str'>
+210316143537.360 DEBUG 'ansible_launcher.main' Running with collection_doc_cache={} <class 'kvs.KeyValueStore'>
+210316143537.360 DEBUG 'ansible_launcher.main' Running with original_command=['explore', 'site.yaml', '-i', 'inventory.yaml'] <class 'list'>
+210316143537.360 DEBUG 'ansible_launcher.main' Running with parse_and_update=<function parse_and_update at 0x7ff0e4db5d90> <class 'function'>
+210316143537.362 DEBUG 'ansible_launcher.ui_framework.ui._set_colors' curses.COLORS: 256
+210316143537.362 DEBUG 'ansible_launcher.ui_framework.ui._set_colors' curses.can_change_color: True
+210316143537.363 DEBUG 'ansible_launcher.ui_framework.ui._set_colors' self._no_osc4: True
+210316143537.363 DEBUG 'ansible_launcher.ui_framework.ui._set_colors' _custom_colors_enabled: False
+210316143537.363 DEBUG 'ansible_launcher.ui_framework.ui._set_colors' Using terminal defaults
+210316143537.378 DEBUG 'ansible_launcher.actions.explore.11ab.run' subaction type is explore
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Using playbook from calling app
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Using params from calling app
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with container_engine=podman <class 'str'>
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with execution_environment=True <class 'bool'>
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with ee_image=quay.io/ansible/network-ee <class 'str'>
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with inventory_columns=inventory_hostname <class 'str'>
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with ide=vscode <class 'str'>
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with logfile=/home/student1/ntp_demo/ansible_launcher.log <class 'str'>
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with loglevel=debug <class 'str'>
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with no_osc4=True <class 'bool'>
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with web=False <class 'bool'>
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with app=explore <class 'str'>
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with playbook=/home/student1/ntp_demo/site.yaml <class 'str'>
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with artifact=/home/student1/ntp_demo/site_artifact.json <class 'str'>
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with inventory=['/home/student1/ntp_demo/inventory.yaml'] <class 'list'>
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with requires_ansible=True <class 'bool'>
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with cmdline=[] <class 'list'>
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with editor=code -g {filename}:{line_number} <class 'str'>
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with editor_is_console=False <class 'bool'>
+210316143537.379 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with share_dir=/home/student1/ansible-launcher_demo/venv/share/ansible_launcher <class 'str'>
+210316143537.380 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with cache_dir=/home/student1/.cache/ansible_launcher <class 'str'>
+210316143537.380 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with collection_doc_cache={} <class 'kvs.KeyValueStore'>
+210316143537.380 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with original_command=['explore', 'site.yaml', '-i', 'inventory.yaml'] <class 'list'>
+210316143537.380 DEBUG 'ansible_launcher.actions.explore.11ab._init_explore' Running with parse_and_update=<function parse_and_update at 0x7ff0e4db5d90> <class 'function'>
+210316143537.380 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316143537.380 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316143537.380 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e4d90780>>
+210316143537.380 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316143537.380 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e4d90780>>
+210316143537.380 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e4d90780>>
+210316143537.380 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316143537.380 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316143537.380 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316143537.380 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316143537.380 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316143537.380 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316143537.487 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316143537.487 INFO 'ansible_launcher.actions.explore.11ab._init_explore' Explore initialized and playbook started.
+210316143537.591 DEBUG 'ansible_launcher.actions.explore.11ab._take_step' autoscroll enabled
+210316143540.253 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316143541.789 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316143541.891 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316143541.994 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316143542.207 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 7 events
+210316143542.316 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 8 events
+210316143542.420 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 14 events
+210316143542.525 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 12 events
+210316143542.629 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 12 events
+210316143542.731 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 12 events
+210316143542.835 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316143543.066 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316143543.066 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316143543.074 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316143543.074 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316143543.074 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316143547.512 DEBUG 'ansible_launcher.actions.explore.11ab._take_step' autoscroll disabled
+210316143548.507 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316143548.507 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316143633.893 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316143633.894 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316143633.894 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316143633.894 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e45d1240>>
+210316143633.894 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316143633.894 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e45d1240>>
+210316143633.894 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e45d1240>>
+210316143633.894 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316143633.894 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316143633.894 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316143633.894 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316143633.894 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316143633.894 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316143633.986 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316143633.986 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316143634.090 DEBUG 'ansible_launcher.actions.explore.11ab._take_step' autoscroll enabled
+210316143636.750 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316143636.852 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316143638.246 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316143638.246 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316143638.349 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316143638.451 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316143638.555 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316143638.659 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316143638.762 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 12 events
+210316143638.866 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 10 events
+210316143638.970 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 12 events
+210316143639.075 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 13 events
+210316143639.180 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 11 events
+210316143639.294 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316143639.502 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316143639.502 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316143639.510 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316143640.985 DEBUG 'ansible_launcher.actions.explore.11ab._take_step' autoscroll disabled
+210316143652.536 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316143652.536 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316143652.537 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316143652.537 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e45d1438>>
+210316143652.537 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316143652.537 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e45d1438>>
+210316143652.537 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e45d1438>>
+210316143652.537 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316143652.537 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316143652.537 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316143652.537 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316143652.537 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316143652.537 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316143652.626 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316143652.626 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316143652.731 DEBUG 'ansible_launcher.actions.explore.11ab._take_step' autoscroll enabled
+210316143655.400 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316143656.835 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316143656.938 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316143657.041 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316143657.147 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316143657.250 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316143657.353 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 8 events
+210316143658.693 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316143658.796 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316143659.831 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316143659.933 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316143704.297 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316143704.297 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316143759.956 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316143800.371 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316143800.475 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316143801.933 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316143802.038 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 7 events
+210316143802.142 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316143802.247 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316143803.285 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316143803.389 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316143803.493 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 9 events
+210316143803.805 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316143803.805 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316143803.817 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316143854.846 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316143854.847 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316144330.846 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316144330.847 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316144330.847 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316144330.847 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c81d0>>
+210316144330.847 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316144330.847 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c81d0>>
+210316144330.847 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c81d0>>
+210316144330.847 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316144330.847 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316144330.847 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316144330.847 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316144330.847 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316144330.847 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316144330.907 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316144330.908 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316144333.668 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316144333.771 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316144335.206 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316144335.308 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316144335.411 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316144335.517 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316144335.620 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316144335.723 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 10 events
+210316144337.156 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316144337.217 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316144337.218 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316144337.218 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316144338.254 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316144338.358 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316144438.352 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316144438.767 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316144438.870 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316144438.976 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316144439.080 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316144439.184 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316144440.223 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316144440.327 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 9 events
+210316144440.743 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316144440.743 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316144440.755 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316144459.166 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316144459.166 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316144513.921 DEBUG 'ansible_launcher.actions.back.run' back requested
+210316144513.922 DEBUG 'ansible_launcher.actions.back.run' Stepping back in explore11ab from task to task_list
+210316144521.226 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316144521.227 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316150113.647 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316150113.647 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316150113.647 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316150113.647 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c82e8>>
+210316150113.647 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316150113.647 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c82e8>>
+210316150113.648 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c82e8>>
+210316150113.648 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316150113.648 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316150113.648 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316150113.648 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316150113.648 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316150113.648 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316150113.746 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316150113.747 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316150116.623 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316150118.163 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316150118.265 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316150118.368 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150118.473 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316150118.577 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 9 events
+210316150118.597 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150118.597 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316150118.597 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316150118.701 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150120.041 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316150120.144 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316150121.176 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316150121.279 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316150221.272 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316150221.376 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150221.687 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150221.791 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150221.998 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150222.103 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 10 events
+210316150222.207 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150222.311 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316150222.423 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150223.358 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150223.566 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150223.670 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 7 events
+210316150223.775 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316150224.087 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316150224.087 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316150224.098 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316150248.307 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316150248.307 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316150341.296 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316150341.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316150341.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316150341.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34da048>>
+210316150341.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316150341.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34da048>>
+210316150341.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34da048>>
+210316150341.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316150341.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316150341.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316150341.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316150341.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316150341.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316150341.397 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316150341.399 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316150344.260 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316150345.901 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316150346.004 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316150346.106 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316150346.210 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316150346.320 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 9 events
+210316150346.423 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150347.755 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316150347.857 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150348.881 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 7 events
+210316150448.878 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316150448.980 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316150449.288 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316150449.391 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316150449.494 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316150449.597 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150449.702 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316150449.805 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150450.830 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316150450.933 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 9 events
+210316150451.240 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316150451.240 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316150451.252 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316150536.067 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316150536.067 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316150536.067 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316150536.067 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c4550>>
+210316150536.067 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316150536.067 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c4550>>
+210316150536.068 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c4550>>
+210316150536.068 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316150536.068 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316150536.068 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316150536.068 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316150536.068 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316150536.068 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316150536.161 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316150536.161 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316150539.033 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316150540.568 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316150540.671 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150540.774 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316150540.876 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316150540.986 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316150541.088 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 9 events
+210316150541.192 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150542.523 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316150542.629 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316150543.657 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150543.760 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316150545.136 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316150545.136 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316150643.788 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316150643.892 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150644.307 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150644.518 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 7 events
+210316150644.624 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316150644.728 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150644.835 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316150644.939 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150645.875 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150645.980 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150646.188 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 9 events
+210316150646.500 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316150646.500 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316150646.512 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316150651.046 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316150651.046 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316150706.052 DEBUG 'ansible_launcher.actions.back.run' back requested
+210316150706.052 DEBUG 'ansible_launcher.actions.back.run' Stepping back in explore11ab from task to task_list
+210316150711.426 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316150711.427 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316150743.278 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316150743.279 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316150743.279 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316150743.279 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e4dc7588>>
+210316150743.279 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316150743.279 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e4dc7588>>
+210316150743.279 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e4dc7588>>
+210316150743.279 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316150743.279 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316150743.279 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316150743.279 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316150743.279 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316150743.279 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316150743.373 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316150743.374 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316150746.242 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316150746.346 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316150747.888 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316150747.991 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316150748.094 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150748.196 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316150748.300 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 9 events
+210316150748.403 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150749.739 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316150749.850 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316150750.874 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316150750.977 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316150848.806 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316150848.806 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316150850.977 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316150851.391 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316150851.599 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316150851.712 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 7 events
+210316150851.817 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316150851.921 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316150852.026 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316150853.068 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316150853.173 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316150853.486 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316150853.486 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316150853.498 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316150857.367 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316150857.367 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316150859.941 DEBUG 'ansible_launcher.actions.back.run' back requested
+210316150859.941 DEBUG 'ansible_launcher.actions.back.run' Stepping back in explore11ab from task to task_list
+210316150905.637 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316150905.637 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316150913.072 DEBUG 'ansible_launcher.actions.back.run' back requested
+210316150913.072 DEBUG 'ansible_launcher.actions.back.run' Stepping back in explore11ab from task to task_list
+210316150916.017 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316150916.017 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316151119.656 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316151119.657 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316151119.657 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316151119.657 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e31cf390>>
+210316151119.657 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316151119.657 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e31cf390>>
+210316151119.657 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e31cf390>>
+210316151119.657 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316151119.657 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316151119.657 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316151119.657 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316151119.657 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316151119.657 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316151119.762 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316151119.764 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316151122.454 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316151124.092 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316151124.195 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316151124.298 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316151124.400 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316151124.503 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316151125.842 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316151125.944 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316151126.968 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316151127.071 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316151131.636 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316151131.636 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316151227.090 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316151227.505 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316151227.609 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316151227.716 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316151227.820 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 8 events
+210316151227.924 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316151228.029 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316151228.136 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316151229.072 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316151229.176 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316151229.281 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 9 events
+210316151229.594 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316151229.595 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316151229.607 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316151236.536 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316151236.537 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316151256.936 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316151256.937 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316151256.937 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316151256.937 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34ba7b8>>
+210316151256.937 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316151256.937 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34ba7b8>>
+210316151256.937 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34ba7b8>>
+210316151256.937 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316151256.937 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316151256.937 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316151256.937 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316151256.937 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316151256.937 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316151257.030 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316151257.031 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316151259.895 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316151301.635 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316151301.737 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316151301.840 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316151301.943 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316151302.046 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316151302.149 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 9 events
+210316151302.252 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316151303.691 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316151303.999 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316151304.101 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316151305.128 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316151305.230 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316151310.556 DEBUG 'ansible_launcher.actions.config.run' config requested
+210316151310.556 DEBUG 'ansible_launcher.actions.config.run' trying execution environment
+210316151310.556 DEBUG 'ansible_launcher.actions.config._try_ee' ee list command: podman run -i -t --env ANSIBLE_NOCOLOR=True -v /home/student1/ntp_demo:/home/student1/ntp_demo quay.io/ansible/network-ee cd /home/student1/ntp_demo && ansible-config list
+210316151310.556 DEBUG 'ansible_launcher.actions.config._try_ee' ee dump command: podman run -i -t --env ANSIBLE_NOCOLOR=True -v /home/student1/ntp_demo:/home/student1/ntp_demo quay.io/ansible/network-ee cd /home/student1/ntp_demo && ansible-config dump
+210316151311.963 DEBUG 'ansible_launcher.actions.config._run_command' ansible-config output ACTION_WARNINGS:   default: true   description: [By default Ansible will issue a warning when receiv<...>
+210316151313.214 DEBUG 'ansible_launcher.actions.config._run_command' ansible-config output ACTION_WARNINGS(default) = True AGNOSTIC_BECOME_PROMPT(default) = True ALLOW_WORLD_READABLE_TMPFILES<...>
+210316151313.248 DEBUG 'ansible_launcher.actions.config._parse_and_merge' yaml loading list output succeeded
+210316151313.257 DEBUG 'ansible_launcher.actions.config._parse_and_merge' parsed and merged list and dump sucessfully
+210316151340.521 DEBUG 'ansible_launcher.actions.back.run' back requested
+210316151340.521 DEBUG 'ansible_launcher.actions.back.run' Return to app_base_class, at last step
+210316151342.476 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316151342.476 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316151405.196 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316151405.300 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316151405.611 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316151406.025 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316151406.232 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316151406.336 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 7 events
+210316151406.440 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316151406.545 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316151406.650 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316151407.689 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316151407.793 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316151407.897 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316151408.212 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316151408.212 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316151408.224 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316151437.397 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316151437.397 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316151450.346 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316151450.346 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316151450.347 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316151450.347 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c8898>>
+210316151450.347 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316151450.347 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c8898>>
+210316151450.347 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c8898>>
+210316151450.347 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316151450.347 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316151450.347 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316151450.347 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316151450.347 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316151450.347 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316151450.440 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316151450.441 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316151453.203 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316151453.306 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316151454.841 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316151454.944 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316151455.154 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 7 events
+210316151455.258 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 10 events
+210316151455.360 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 16 events
+210316151455.464 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 13 events
+210316151455.568 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 12 events
+210316151455.671 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 8 events
+210316151455.984 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316151455.984 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316151455.991 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316151546.816 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316151546.817 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316151548.737 DEBUG 'ansible_launcher.actions.explore.11ab._take_step' autoscroll disabled
+210316151553.906 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316151553.906 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316151558.102 DEBUG 'ansible_launcher.actions.back.run' back requested
+210316151558.102 DEBUG 'ansible_launcher.actions.back.run' Stepping back in explore11ab from task to task_list
+210316151601.817 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316151601.817 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316151820.267 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316151820.268 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316151820.268 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316151820.268 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c4c18>>
+210316151820.268 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316151820.268 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c4c18>>
+210316151820.268 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c4c18>>
+210316151820.268 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316151820.268 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316151820.268 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316151820.268 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316151820.268 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316151820.268 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316151820.362 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316151820.363 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316151820.468 DEBUG 'ansible_launcher.actions.explore.11ab._take_step' autoscroll enabled
+210316151823.233 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316151824.769 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316151824.873 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316151824.975 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316151825.078 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316151825.181 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316151825.284 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316151826.724 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316151826.827 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316151827.851 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316151827.953 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316151900.456 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316151900.457 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316151927.936 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316151928.454 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316151928.662 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 7 events
+210316151928.768 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316151928.873 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316151928.977 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316151930.124 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316151930.234 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316151930.963 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316151931.067 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316151931.379 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316151931.379 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316151931.393 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316151936.806 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316151936.807 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316152053.296 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316152053.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316152053.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316152053.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34f3630>>
+210316152053.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316152053.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34f3630>>
+210316152053.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34f3630>>
+210316152053.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316152053.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316152053.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316152053.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316152053.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316152053.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316152053.388 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316152053.389 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316152056.253 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316152057.788 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152057.894 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316152058.007 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152058.109 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 7 events
+210316152058.218 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 9 events
+210316152058.321 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 13 events
+210316152058.427 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 10 events
+210316152058.530 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 12 events
+210316152058.633 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 14 events
+210316152058.735 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 8 events
+210316152059.043 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316152059.043 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316152059.051 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316152123.596 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316152123.596 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316152125.891 DEBUG 'ansible_launcher.actions.explore.11ab._take_step' autoscroll disabled
+210316152128.166 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316152128.167 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316152137.016 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316152137.017 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316152137.017 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316152137.017 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c4c18>>
+210316152137.017 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316152137.017 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c4c18>>
+210316152137.017 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34c4c18>>
+210316152137.017 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316152137.017 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316152137.017 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316152137.017 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316152137.017 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316152137.017 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316152137.109 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316152137.110 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316152137.215 DEBUG 'ansible_launcher.actions.explore.11ab._take_step' autoscroll enabled
+210316152139.879 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316152139.982 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152141.414 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152141.521 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152141.624 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316152141.726 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316152141.829 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316152141.935 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 11 events
+210316152142.038 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 12 events
+210316152142.141 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 14 events
+210316152142.243 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 12 events
+210316152142.349 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 11 events
+210316152142.454 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152142.762 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316152142.762 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316152142.770 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316152147.061 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316152147.062 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316152150.925 DEBUG 'ansible_launcher.actions.explore.11ab._take_step' autoscroll disabled
+210316152219.596 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316152219.597 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316152219.597 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316152219.597 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34d04a8>>
+210316152219.597 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316152219.597 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34d04a8>>
+210316152219.597 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e34d04a8>>
+210316152219.597 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316152219.597 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316152219.597 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316152219.597 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316152219.597 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316152219.597 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316152219.689 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316152219.689 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316152219.794 DEBUG 'ansible_launcher.actions.explore.11ab._take_step' autoscroll enabled
+210316152222.460 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316152222.563 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152223.996 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316152224.098 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316152224.202 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152224.305 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316152224.408 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 9 events
+210316152224.510 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316152225.944 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316152226.046 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152227.071 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316152227.173 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316152242.776 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316152242.776 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316152327.090 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152327.194 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152327.611 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 7 events
+210316152327.718 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 7 events
+210316152327.823 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152327.927 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 7 events
+210316152328.032 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 13 events
+210316152328.138 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152328.450 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316152328.451 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316152328.462 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316152337.056 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316152337.056 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316152349.717 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316152349.717 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316152349.717 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316152349.717 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e57c7b38>>
+210316152349.717 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316152349.717 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e57c7b38>>
+210316152349.717 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e57c7b38>>
+210316152349.717 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316152349.717 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316152349.717 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316152349.717 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316152349.718 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316152349.718 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316152349.811 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316152349.812 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316152352.574 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152352.676 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316152354.212 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316152354.314 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152354.417 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316152354.520 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316152354.624 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 10 events
+210316152356.057 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316152356.160 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152357.185 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 7 events
+210316152406.253 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316152406.253 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316152457.178 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152457.281 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152457.593 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152457.700 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316152457.804 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 7 events
+210316152457.909 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152458.013 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316152458.117 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316152459.160 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316152459.265 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152459.369 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152459.992 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316152500.097 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 7 events
+210316152500.201 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316152500.513 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316152500.513 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316152500.527 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316152506.866 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316152506.867 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316152524.256 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316152524.257 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316152524.257 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316152524.257 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e2f38668>>
+210316152524.257 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316152524.257 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e2f38668>>
+210316152524.257 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e2f38668>>
+210316152524.257 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316152524.257 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316152524.257 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316152524.257 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316152524.257 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316152524.257 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316152524.348 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316152524.350 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316152527.218 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316152528.855 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316152528.957 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152529.060 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316152529.163 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152529.265 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 9 events
+210316152529.368 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 12 events
+210316152529.476 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 13 events
+210316152529.579 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 13 events
+210316152529.686 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 14 events
+210316152529.789 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316152530.098 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316152530.098 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316152530.106 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316152534.466 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316152534.467 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316152536.605 DEBUG 'ansible_launcher.actions.explore.11ab._take_step' autoscroll disabled
+210316152540.166 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316152540.167 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task
+210316152547.296 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316152547.296 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316152547.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316152547.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e2f38860>>
+210316152547.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316152547.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e2f38860>>
+210316152547.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e2f38860>>
+210316152547.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316152547.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316152547.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316152547.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316152547.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316152547.297 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316152547.412 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316152547.415 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316152547.519 DEBUG 'ansible_launcher.actions.explore.11ab._take_step' autoscroll enabled
+210316152550.186 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152550.288 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316152551.723 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316152552.748 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152552.850 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152552.886 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152552.886 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316152552.887 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316152552.990 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316152553.094 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 6 events
+210316152553.197 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 16 events
+210316152553.301 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 11 events
+210316152553.406 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 11 events
+210316152553.511 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 14 events
+210316152553.615 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 8 events
+210316152553.935 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316152553.935 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316152553.943 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316152557.043 DEBUG 'ansible_launcher.actions.explore.11ab._take_step' autoscroll disabled
+210316152624.466 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
+210316152624.467 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210316152624.467 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210316152624.467 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e57b66a0>>
+210316152624.467 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
+210316152624.467 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e57b66a0>>
+210316152624.467 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7ff0e57b66a0>>
+210316152624.467 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210316152624.467 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
+210316152624.467 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
+210316152624.467 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210316152624.467 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
+210316152624.467 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210316152624.559 DEBUG 'ansible_launcher.actions.explore.11ab._run_runner' runner requested to start
+210316152624.559 DEBUG 'ansible_launcher.actions.explore.11ab.rerun' Playbook rerun triggered
+210316152624.665 DEBUG 'ansible_launcher.actions.explore.11ab._take_step' autoscroll enabled
+210316152627.333 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152627.436 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316152628.972 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316152629.075 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152629.177 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316152629.281 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316152629.384 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 9 events
+210316152629.486 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152630.819 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316152630.923 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152631.947 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316152632.049 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152720.866 DEBUG 'ansible_launcher.actions.select.run' selection made
+210316152720.866 DEBUG 'ansible_launcher.actions.select.run' Requested next step in explore11ab will be task_list
+210316152732.021 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152732.125 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152732.437 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 2 events
+210316152733.374 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152733.485 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 8 events
+210316152733.697 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316152733.802 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 4 events
+210316152734.842 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152734.946 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 1 events
+210316152735.059 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 5 events
+210316152735.788 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 3 events
+210316152735.892 DEBUG 'ansible_launcher.actions.explore.11ab._dequeue' Drained 8 events
+210316152736.308 DEBUG 'ansible_launcher.actions.explore.11ab.update' runner finished
+210316152736.308 INFO 'ansible_launcher.actions.explore.11ab.update' Playbook complete
+210316152736.322 INFO 'ansible_launcher.actions.explore.11ab.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
+210316152743.176 DEBUG 'ansible_launcher.actions.explore.11ab._take_step' autoscroll disabled
+210316152744.758 DEBUG 'ansible_launcher.actions.explore.11ab._take_step' autoscroll enabled
+210316152814.597 DEBUG 'ansible_launcher.actions.explore.11ab._prepare_to_quit' runner not running

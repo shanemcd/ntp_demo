@@ -1,0 +1,36 @@
+
+- example: server 0.centos.pool.ntp.org iburst
+  getval: '^server (?P<server_name>\S+)(?:\s(?P<params>.*))$'
+  result:
+    servers:
+    - name: "{{ server_name }}"
+      params: "{{ (params|default).split() }}"
+
+- example: 210 Number of sources = 4
+  getval: '^.*Number of sources = (?P<sources>\d+)$'
+  result:
+    sources: "'{{ sources }}'"
+
+- example: ^* 169.254.169.123               3   4   377    15    -14us[  -23us] +/-  581us
+  getval: |
+    (?x)
+    ^                                       # Beginning of line
+    (?P<mode>[\^#=])                        # Capture the mode
+    (?P<state>.)\s                          # Capture the state
+    (?P<remote>\S+)\s+                      # The remote name
+    (?P<stratum>\d{1,2})\s+                 # The stratum of the remote followed by spaces
+    (?P<poll>\d+)\s+                        # Frequency of poll, followed by spaces
+    (?P<reach>\d+)\s+                       # Reach, followed by spaces
+    (?P<lastrx>\S+)\s+                      # The last rx
+    (?P<last_sample>.*)                     # The last sample
+    $
+  result:
+    statuses:
+    - mode: "{{ mode }}"
+      state: "{{ state }}"
+      remote: "{{ remote }}"
+      stratum: "{{ stratum }}"
+      poll: "{{ poll }}"
+      reach: "{{ reach }}"
+      lastrx: "{{ lastrx }}"
+      last_sample: "{{ last_sample }}"

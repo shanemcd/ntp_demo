@@ -1,0 +1,92 @@
+---
+- name: Collect the current NTP configuration
+  ansible.utils.cli_parse:
+    command: cat /etc/chrony.conf
+    parser:
+      name: ansible.netcommon.native
+      template_path: "{{ role_path }}/templates/chrony_parser.yaml"
+    set_fact: original_ntp_configuration
+
+- name: Compare the current and desired
+  ansible.utils.fact_diff:
+    before: "{{ original_ntp_configuration|ansible.utils.to_paths }}"
+    after: "{{ ntp|ansible.utils.to_paths }}"
+  register: ntp_difference
+
+- name: Correct NTP configuration
+  when: ntp_difference.changed
+  become: True
+  block:
+  - name: Push a corrected NTP conf file
+    ansible.builtin.template:
+      src: chrony.conf.j2
+      dest: /etc/chrony.conf
+      owner: root
+      group: root
+    vars:
+      ntp_servers: "{{ ntp.servers }}"
+
+  - name: Restart service chronyd
+    ansible.builtin.service:
+      name: chronyd
+      state: restarted
+
+  - name: Allow servers to syncronize (60s)
+    ansible.builtin.pause:
+      seconds: 60
+
+  - name: Collect the current NTP server statuses
+    ansible.utils.cli_parse:
+      command: chronyc sources
+      parser:
+        name: ansible.netcommon.native
+        template_path: "{{ playbook_dir }}/chrony_parser.yaml"
+      set_fact: current_ntp_status
+
+  - name: Define the schema that will be used for checking
+    ansible.builtin.set_fact:
+      criteria:
+        type: object
+        properties:
+          sources:
+            type: string
+            const: "{{ ntp.servers|length }}"
+          statuses:
+            type: array
+            items:
+              type: object
+              properties:
+                stratum:
+                  type: integer
+                  not:
+                    const: 16
+              required:
+              - stratum
+        required:
+        - sources
+        - statuses
+
+  - name: Use a JSON schema to ensure no NTP servers are stratum 16 and count is correct
+    ansible.builtin.set_fact:
+      unreachable_servers: "{{ current_ntp_status|ansible.utils.validate(criteria) }}"
+
+  - name: Restore the original configuration if a server is failed (stratum 16)
+    ansible.builtin.template:
+      src: chrony.conf.j2
+      dest: /etc/chrony.conf
+      owner: root
+      group: root
+    vars:
+      ntp_servers: "{{ original_ntp_configuration.servers }}"
+    when: unreachable_servers
+
+  - name: Restart service chronyd
+    ansible.builtin.service:
+      name: chronyd
+      state: restarted
+    when: unreachable_servers
+
+  - name: Fail the host to indicate unreachable servers were found and config restored
+    ansible.builtin.fail:
+      msg: "One or more ntp servers found with stratum 16: {{ unreachable_servers }}"
+    when: unreachable_servers

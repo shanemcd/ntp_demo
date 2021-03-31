@@ -1,0 +1,8 @@
+---
+- hosts: all
+  gather_facts: true
+  tasks:
+
+    ## this example is not using FQCN since its within the collection
+  - include_role:
+      name: ntp

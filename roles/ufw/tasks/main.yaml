@@ -1,0 +1,3 @@
+- name: Set logging on
+  community.general.ufw:
+    logging: 'on'

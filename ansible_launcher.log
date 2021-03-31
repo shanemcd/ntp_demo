@@ -1,117 +1,96 @@
-210316153236.289 DEBUG 'ansible_launcher.main' Using /home/student1/ntp_demo/ansible_launcher.cfg
-210316153236.289 DEBUG 'ansible_launcher.main' ini entry: container_engine matched to arg: container_engine
-210316153236.289 DEBUG 'ansible_launcher.main' container_engine was not provided, using 'podman'
-210316153236.289 DEBUG 'ansible_launcher.main' ini entry: ee_image matched to arg: ee_image
-210316153236.289 DEBUG 'ansible_launcher.main' ee_image was not provided, using 'quay.io/ansible/network-ee'
-210316153236.289 DEBUG 'ansible_launcher.main' ini entry: execution_environment matched to arg: execution_environment
-210316153236.289 DEBUG 'ansible_launcher.main' execution_environment was default, using entry 'True'
-210316153236.289 DEBUG 'ansible_launcher.main' ini entry: ide matched to arg: ide
-210316153236.289 DEBUG 'ansible_launcher.main' ide was not provided, using 'vscode'
-210316153236.290 DEBUG 'ansible_launcher.main' ini entry: inventory_columns matched to arg: inventory_columns
-210316153236.290 DEBUG 'ansible_launcher.main' inventory_columns was not provided, using 'inventory_hostname'
-210316153236.290 DEBUG 'ansible_launcher.main' ini entry: loglevel matched to arg: loglevel
-210316153236.290 DEBUG 'ansible_launcher.main' loglevel was not provided, using 'debug'
-210316153236.290 DEBUG 'ansible_launcher.main' ini entry: no_osc4 matched to arg: no_osc4
-210316153236.290 DEBUG 'ansible_launcher.main' no_osc4 was default, using entry 'True'
-210316153236.290 DEBUG 'ansible_launcher.main' Collection doc cache: path=/home/student1/.cache/ansible_launcher/collection_doc_cache.db
-210316153236.290 DEBUG 'ansible_launcher.main' Collection doc cache: current version=0.6.0
-210316153236.294 DEBUG 'ansible_launcher.utils.set_ansible_envar' ANSIBLE_CONFIG set to /home/student1/ntp_demo/ansible.cfg
-210316153236.295 DEBUG 'ansible_launcher.main' Running with container_engine=podman <class 'str'>
-210316153236.295 DEBUG 'ansible_launcher.main' Running with execution_environment=True <class 'bool'>
-210316153236.295 DEBUG 'ansible_launcher.main' Running with ee_image=quay.io/ansible/network-ee <class 'str'>
-210316153236.295 DEBUG 'ansible_launcher.main' Running with inventory_columns=inventory_hostname <class 'str'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with ide=vscode <class 'str'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with logfile=/home/student1/ntp_demo/ansible_launcher.log <class 'str'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with loglevel=debug <class 'str'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with no_osc4=True <class 'bool'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with web=False <class 'bool'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with app=explore <class 'str'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with playbook=/home/student1/ntp_demo/site.yaml <class 'str'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with artifact=/home/student1/ntp_demo/site_artifact.json <class 'str'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with inventory=['/home/student1/ntp_demo/inventory.yaml'] <class 'list'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with requires_ansible=True <class 'bool'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with cmdline=[] <class 'list'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with editor=code -g {filename}:{line_number} <class 'str'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with editor_is_console=False <class 'bool'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with share_dir=/home/student1/ansible-launcher_demo/venv/share/ansible_launcher <class 'str'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with cache_dir=/home/student1/.cache/ansible_launcher <class 'str'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with collection_doc_cache={} <class 'kvs.KeyValueStore'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with original_command=['explore', 'site.yaml', '-i', 'inventory.yaml'] <class 'list'>
-210316153236.296 DEBUG 'ansible_launcher.main' Running with parse_and_update=<function parse_and_update at 0x7f87ed651d90> <class 'function'>
-210316153236.298 DEBUG 'ansible_launcher.ui_framework.ui._set_colors' curses.COLORS: 256
-210316153236.299 DEBUG 'ansible_launcher.ui_framework.ui._set_colors' curses.can_change_color: True
-210316153236.299 DEBUG 'ansible_launcher.ui_framework.ui._set_colors' self._no_osc4: True
-210316153236.299 DEBUG 'ansible_launcher.ui_framework.ui._set_colors' _custom_colors_enabled: False
-210316153236.299 DEBUG 'ansible_launcher.ui_framework.ui._set_colors' Using terminal defaults
-210316153236.315 DEBUG 'ansible_launcher.actions.explore.bf79.run' subaction type is explore
-210316153236.315 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Using playbook from calling app
-210316153236.315 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Using params from calling app
-210316153236.315 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with container_engine=podman <class 'str'>
-210316153236.315 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with execution_environment=True <class 'bool'>
-210316153236.315 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with ee_image=quay.io/ansible/network-ee <class 'str'>
-210316153236.315 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with inventory_columns=inventory_hostname <class 'str'>
-210316153236.315 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with ide=vscode <class 'str'>
-210316153236.315 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with logfile=/home/student1/ntp_demo/ansible_launcher.log <class 'str'>
-210316153236.315 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with loglevel=debug <class 'str'>
-210316153236.315 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with no_osc4=True <class 'bool'>
-210316153236.316 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with web=False <class 'bool'>
-210316153236.316 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with app=explore <class 'str'>
-210316153236.316 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with playbook=/home/student1/ntp_demo/site.yaml <class 'str'>
-210316153236.316 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with artifact=/home/student1/ntp_demo/site_artifact.json <class 'str'>
-210316153236.316 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with inventory=['/home/student1/ntp_demo/inventory.yaml'] <class 'list'>
-210316153236.316 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with requires_ansible=True <class 'bool'>
-210316153236.316 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with cmdline=[] <class 'list'>
-210316153236.316 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with editor=code -g {filename}:{line_number} <class 'str'>
-210316153236.316 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with editor_is_console=False <class 'bool'>
-210316153236.316 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with share_dir=/home/student1/ansible-launcher_demo/venv/share/ansible_launcher <class 'str'>
-210316153236.316 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with cache_dir=/home/student1/.cache/ansible_launcher <class 'str'>
-210316153236.316 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with collection_doc_cache={} <class 'kvs.KeyValueStore'>
-210316153236.316 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with original_command=['explore', 'site.yaml', '-i', 'inventory.yaml'] <class 'list'>
-210316153236.316 DEBUG 'ansible_launcher.actions.explore.bf79._init_explore' Running with parse_and_update=<function parse_and_update at 0x7f87ed651d90> <class 'function'>
-210316153236.316 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
-210316153236.316 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
-210316153236.316 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7f87ed61d7b8>>
-210316153236.317 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
-210316153236.317 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7f87ed61d7b8>>
-210316153236.317 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7f87ed61d7b8>>
-210316153236.317 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
-210316153236.317 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
-210316153236.317 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
-210316153236.317 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
-210316153236.317 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
-210316153236.317 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
-210316153236.410 DEBUG 'ansible_launcher.actions.explore.bf79._run_runner' runner requested to start
-210316153236.410 INFO 'ansible_launcher.actions.explore.bf79._init_explore' Explore initialized and playbook started.
-210316153236.514 DEBUG 'ansible_launcher.actions.explore.bf79._take_step' autoscroll enabled
-210316153239.173 DEBUG 'ansible_launcher.actions.explore.bf79._dequeue' Drained 10 events
-210316153239.582 DEBUG 'ansible_launcher.actions.explore.bf79.update' runner finished
-210316153239.582 INFO 'ansible_launcher.actions.explore.bf79.update' Playbook complete
-210316153239.583 INFO 'ansible_launcher.actions.explore.bf79.write_artifact' Saved artifact as /home/student1/ntp_demo/site_artifact.json
-210316153245.596 DEBUG 'ansible_launcher.actions.stream.run' stream requested
-210316153305.570 DEBUG 'ansible_launcher.actions.rerun.run' rerun requested
-210316153305.570 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
-210316153305.570 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
-210316153305.570 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7f87ed61d978>>
-210316153305.570 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/home/student1/ntp_demo/ansible.cfg'}
-210316153305.570 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7f87ed61d978>>
-210316153305.570 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x7f87ed61d978>>
-210316153305.570 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
-210316153305.570 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/home/student1/ntp_demo/site.yaml', '-i', '/home/student1/ntp_demo/inventory.yaml']
-210316153305.570 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/network-ee
-210316153305.570 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
-210316153305.570 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:podman
-210316153305.570 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
-210316153305.664 DEBUG 'ansible_launcher.actions.explore.bf79._run_runner' runner requested to start
-210316153305.665 DEBUG 'ansible_launcher.actions.explore.bf79.rerun' Playbook rerun triggered
-210316153308.437 DEBUG 'ansible_launcher.actions.explore.bf79._dequeue' Drained 1 events
-210316153308.539 DEBUG 'ansible_launcher.actions.explore.bf79._dequeue' Drained 5 events
-210316153310.075 DEBUG 'ansible_launcher.actions.explore.bf79._dequeue' Drained 2 events
-210316153310.179 DEBUG 'ansible_launcher.actions.explore.bf79._dequeue' Drained 4 events
-210316153310.289 DEBUG 'ansible_launcher.actions.explore.bf79._dequeue' Drained 1 events
-210316153310.391 DEBUG 'ansible_launcher.actions.explore.bf79._dequeue' Drained 6 events
-210316153310.500 DEBUG 'ansible_launcher.actions.explore.bf79._dequeue' Drained 5 events
-210316153310.603 DEBUG 'ansible_launcher.actions.explore.bf79._dequeue' Drained 6 events
-210316153311.935 DEBUG 'ansible_launcher.actions.explore.bf79._dequeue' Drained 3 events
-210316153312.038 DEBUG 'ansible_launcher.actions.explore.bf79._dequeue' Drained 4 events
-210316153313.062 DEBUG 'ansible_launcher.actions.explore.bf79._dequeue' Drained 2 events
-210316153313.165 DEBUG 'ansible_launcher.actions.explore.bf79._dequeue' Drained 5 events
+210317171749.074 DEBUG 'ansible_launcher.main' Using /Users/bthornto/github/ntp_demo/ansible_launcher.cfg
+210317171749.075 DEBUG 'ansible_launcher.main' ini entry: container_engine matched to arg: container_engine
+210317171749.075 DEBUG 'ansible_launcher.main' container_engine was not provided, using 'docker'
+210317171749.075 DEBUG 'ansible_launcher.main' ini entry: execution_environment matched to arg: execution_environment
+210317171749.075 DEBUG 'ansible_launcher.main' execution_environment was default, using entry 'True'
+210317171749.075 DEBUG 'ansible_launcher.main' ini entry: ide matched to arg: ide
+210317171749.075 DEBUG 'ansible_launcher.main' ide was not provided, using 'vscode'
+210317171749.075 DEBUG 'ansible_launcher.main' ini entry: inventory_columns matched to arg: inventory_columns
+210317171749.075 DEBUG 'ansible_launcher.main' inventory_columns was not provided, using 'inventory_hostname'
+210317171749.075 DEBUG 'ansible_launcher.main' ini entry: loglevel matched to arg: loglevel
+210317171749.075 DEBUG 'ansible_launcher.main' loglevel was not provided, using 'debug'
+210317171749.075 DEBUG 'ansible_launcher.main' ini entry: no_osc4 matched to arg: no_osc4
+210317171749.075 DEBUG 'ansible_launcher.main' no_osc4 was default, using entry 'True'
+210317171749.075 DEBUG 'ansible_launcher.main' Collection doc cache: path=/Users/bthornto/.cache/ansible_launcher/collection_doc_cache.db
+210317171749.075 DEBUG 'ansible_launcher.main' Collection doc cache: current version=0.6.0
+210317171749.081 DEBUG 'ansible_launcher.utils.set_ansible_envar' ANSIBLE_CONFIG set to /Users/bthornto/github/ntp_demo/ansible.cfg
+210317171749.081 DEBUG 'ansible_launcher.main' Running with container_engine=docker <class 'str'>
+210317171749.081 DEBUG 'ansible_launcher.main' Running with execution_environment=True <class 'bool'>
+210317171749.081 DEBUG 'ansible_launcher.main' Running with ee_image=quay.io/ansible/ansible-runner:devel <class 'str'>
+210317171749.081 DEBUG 'ansible_launcher.main' Running with inventory_columns=inventory_hostname <class 'str'>
+210317171749.081 DEBUG 'ansible_launcher.main' Running with ide=vscode <class 'str'>
+210317171749.081 DEBUG 'ansible_launcher.main' Running with logfile=/Users/bthornto/github/ntp_demo/ansible_launcher.log <class 'str'>
+210317171749.081 DEBUG 'ansible_launcher.main' Running with loglevel=debug <class 'str'>
+210317171749.081 DEBUG 'ansible_launcher.main' Running with no_osc4=True <class 'bool'>
+210317171749.081 DEBUG 'ansible_launcher.main' Running with web=False <class 'bool'>
+210317171749.081 DEBUG 'ansible_launcher.main' Running with app=explore <class 'str'>
+210317171749.082 DEBUG 'ansible_launcher.main' Running with playbook=/Users/bthornto/github/ntp_demo/site.yaml <class 'str'>
+210317171749.082 DEBUG 'ansible_launcher.main' Running with artifact=/Users/bthornto/github/ntp_demo/site_artifact.json <class 'str'>
+210317171749.082 DEBUG 'ansible_launcher.main' Running with inventory=['/Users/bthornto/github/ntp_demo/inventory.yaml'] <class 'list'>
+210317171749.082 DEBUG 'ansible_launcher.main' Running with requires_ansible=True <class 'bool'>
+210317171749.082 DEBUG 'ansible_launcher.main' Running with cmdline=[] <class 'list'>
+210317171749.082 DEBUG 'ansible_launcher.main' Running with editor=code -g {filename}:{line_number} <class 'str'>
+210317171749.082 DEBUG 'ansible_launcher.main' Running with editor_is_console=False <class 'bool'>
+210317171749.082 DEBUG 'ansible_launcher.main' Running with share_dir=/Users/bthornto/github/ntp_demo/venv/share/ansible_launcher <class 'str'>
+210317171749.082 DEBUG 'ansible_launcher.main' Running with cache_dir=/Users/bthornto/.cache/ansible_launcher <class 'str'>
+210317171749.082 DEBUG 'ansible_launcher.main' Running with collection_doc_cache={} <class 'kvs.KeyValueStore'>
+210317171749.082 DEBUG 'ansible_launcher.main' Running with original_command=['explore', 'site.yaml', '-i', 'inventory.yaml'] <class 'list'>
+210317171749.082 DEBUG 'ansible_launcher.main' Running with parse_and_update=<function parse_and_update at 0x10af2d550> <class 'function'>
+210317171749.083 DEBUG 'ansible_launcher.ui_framework.ui._set_colors' curses.COLORS: 256
+210317171749.084 DEBUG 'ansible_launcher.ui_framework.ui._set_colors' curses.can_change_color: True
+210317171749.084 DEBUG 'ansible_launcher.ui_framework.ui._set_colors' self._no_osc4: True
+210317171749.084 DEBUG 'ansible_launcher.ui_framework.ui._set_colors' _custom_colors_enabled: False
+210317171749.084 DEBUG 'ansible_launcher.ui_framework.ui._set_colors' Using terminal defaults
+210317171749.107 DEBUG 'ansible_launcher.actions.explore.c85d.run' subaction type is explore
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Using playbook from calling app
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Using params from calling app
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with container_engine=docker <class 'str'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with execution_environment=True <class 'bool'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with ee_image=quay.io/ansible/ansible-runner:devel <class 'str'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with inventory_columns=inventory_hostname <class 'str'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with ide=vscode <class 'str'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with logfile=/Users/bthornto/github/ntp_demo/ansible_launcher.log <class 'str'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with loglevel=debug <class 'str'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with no_osc4=True <class 'bool'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with web=False <class 'bool'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with app=explore <class 'str'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with playbook=/Users/bthornto/github/ntp_demo/site.yaml <class 'str'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with artifact=/Users/bthornto/github/ntp_demo/site_artifact.json <class 'str'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with inventory=['/Users/bthornto/github/ntp_demo/inventory.yaml'] <class 'list'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with requires_ansible=True <class 'bool'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with cmdline=[] <class 'list'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with editor=code -g {filename}:{line_number} <class 'str'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with editor_is_console=False <class 'bool'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with share_dir=/Users/bthornto/github/ntp_demo/venv/share/ansible_launcher <class 'str'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with cache_dir=/Users/bthornto/.cache/ansible_launcher <class 'str'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with collection_doc_cache={} <class 'kvs.KeyValueStore'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with original_command=['explore', 'site.yaml', '-i', 'inventory.yaml'] <class 'list'>
+210317171749.108 DEBUG 'ansible_launcher.actions.explore.c85d._init_explore' Running with parse_and_update=<function parse_and_update at 0x10af2d550> <class 'function'>
+210317171749.108 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: json_mode:True
+210317171749.109 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: quiet:True
+210317171749.109 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: event_handler:<bound method PlaybookRunner._event_handler of <ansible_launcher.actions._runner.PlaybookRunner object at 0x10af2c160>>
+210317171749.109 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: envvars:{'ANSIBLE_CONFIG': '/Users/bthornto/github/ntp_demo/ansible.cfg'}
+210317171749.109 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cancel_callback:<bound method PlaybookRunner.runner_cancelled_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x10af2c160>>
+210317171749.109 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: finished_callback:<bound method PlaybookRunner.runner_finished_callback of <ansible_launcher.actions._runner.PlaybookRunner object at 0x10af2c160>>
+210317171749.109 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cli_execenv_cmd:playbook
+210317171749.109 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: cmdline:['/Users/bthornto/github/ntp_demo/site.yaml', '-i', '/Users/bthornto/github/ntp_demo/inventory.yaml']
+210317171749.109 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: container_image:quay.io/ansible/ansible-runner:devel
+210317171749.109 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: private_data_dir:.
+210317171749.109 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation_executable:docker
+210317171749.109 DEBUG 'ansible_launcher.actions._runner.run' Runner arg: process_isolation:True
+210317171749.690 DEBUG 'ansible_launcher.actions.explore.c85d._run_runner' runner requested to start
+210317171749.690 INFO 'ansible_launcher.actions.explore.c85d._init_explore' Explore initialized and playbook started.
+210317171749.795 DEBUG 'ansible_launcher.actions.explore.c85d._take_step' autoscroll enabled
+210317171750.216 DEBUG 'ansible_launcher.actions.explore.c85d._dequeue' Drained 1 events
+210317171752.950 DEBUG 'ansible_launcher.actions.explore.c85d._dequeue' Drained 68 events
+210317171752.950 DEBUG 'ansible_launcher.actions.log.run' log requested
+210317171808.058 DEBUG 'ansible_launcher.actions.back.run' back requested
+210317171808.058 DEBUG 'ansible_launcher.actions.back.run' Stepping back in explorec85d from log to plays
+210317172240.108 DEBUG 'ansible_launcher.actions.explore.c85d._dequeue' Drained 598 events
+210317172240.109 DEBUG 'ansible_launcher.actions.explore.c85d._dequeue' Drained 1 events
+210317172240.217 DEBUG 'ansible_launcher.actions.explore.c85d._dequeue' Drained 603 events
+210317172241.585 DEBUG 'ansible_launcher.actions.explore.c85d._dequeue' Drained 10 events
+210317172241.904 DEBUG 'ansible_launcher.actions.explore.c85d.update' runner finished
+210317172241.904 INFO 'ansible_launcher.actions.explore.c85d.update' Playbook complete
+210317172241.905 INFO 'ansible_launcher.actions.explore.c85d.write_artifact' Saved artifact as /Users/bthornto/github/ntp_demo/site_artifact.json
+210318122805.621 DEBUG 'ansible_launcher.actions.explore.c85d._prepare_to_quit' runner not running

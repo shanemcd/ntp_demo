@@ -32,8 +32,10 @@
       state: restarted
 
   - name: Allow servers to syncronize (60s)
-    ansible.builtin.pause:
-      seconds: 60
+    ansible.builtin.wait_for:
+      timeout: 60
+    delegate_to: localhost
+
 
   - name: Collect the current NTP server statuses
     ansible.utils.cli_parse:
